@@ -1,0 +1,7 @@
+packages:
+  - fuck_off_react-client
+
+allowBuilds:
+  esbuild: true
+  sharp: false
+  unrs-resolver: false

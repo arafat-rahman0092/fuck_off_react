@@ -1,0 +1,21 @@
+{
+  "name": "fuck_off_react",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "fuck_off_react-client"
+  ],
+  "scripts": {
+    "preinstall": "node scripts/install-info.mjs",
+    "dev": "node scripts/dev.mjs",
+    "client": "node scripts/run-app.mjs client"
+  },
+  "type": "module",
+  "dependencies": {
+    "cross-spawn": "^7.0.6",
+    "react-router": "^8.5.1"
+  },
+  "devDependencies": {
+    "daisyui": "^5.7.50"
+  }
+}
