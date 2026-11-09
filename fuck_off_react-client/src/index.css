@@ -1,4 +1,30 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: cupcake, dark, light, corporate, synthwave, retro, cyberpunk, valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy, wireframe, black, luxury, dracula;
-} 
+  themes: all;
+}
+
+.product-card {
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.product-card:hover {
+  border-color: var(--color-primary);
+  box-shadow:
+    0 1rem 2rem color-mix(in oklab, var(--color-base-content) 12%, transparent),
+    0 0 2rem color-mix(in oklab, var(--color-primary) 55%, transparent);
+  transform: translateY(-0.5rem) scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card {
+    transition: none;
+  }
+
+  .product-card:hover {
+    transform: none;
+  }
+
+}
